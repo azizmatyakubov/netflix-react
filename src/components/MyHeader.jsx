@@ -1,4 +1,4 @@
-import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 const MyHeader = () => {
   return (
@@ -11,11 +11,7 @@ const MyHeader = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <NavDropdown
-              title="Genre"
-              className="bordered"
-              id="basic-nav-dropdown"
-            >
+            <NavDropdown title="Genre" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Comedy</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Horror</NavDropdown.Item>
