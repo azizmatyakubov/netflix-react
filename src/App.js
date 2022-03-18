@@ -5,14 +5,16 @@ import MyNavbar from "./components/Navbar";
 
 function App() {
   return (
-    <MyNavbar
-      logoWidth={"100%"}
-      iconWidth={"40px"}
-      bgColor={"black"}
-      textColor={"white"}
-      fontSize={"20px"}
-    />
-     <Gallery />
+<>
+      <MyNavbar
+        logoWidth={"100%"}
+        iconWidth={"40px"}
+        bgColor={"black"}
+        textColor={"white"}
+        fontSize={"20px"}
+      />
+       <Gallery />
+</>
 
   );
 }
