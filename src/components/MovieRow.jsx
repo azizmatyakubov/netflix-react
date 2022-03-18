@@ -17,7 +17,6 @@ export default class MovieRow extends Component {
       this.setState({ isLoading: false });
       let data = await response.json();
       this.setState({ movies: data.Search });
-      console.log(response, "this is response");
     } else {
       console.log("error");
     }
@@ -38,7 +37,7 @@ export default class MovieRow extends Component {
           )}
         </h4>
         <Row className="movieRow">
-          {this.state.movies.map((movie, i) => (
+          {this.state.movies !== undefined && this.state.movies.map((movie, i) => (
             <Movie movie={movie} key={i} />
           ))}
         </Row>

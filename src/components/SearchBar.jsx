@@ -12,6 +12,7 @@ const SearchBar = (props) => {
         onChange={(e) => {
           props.state(e.target.value);
         }}
+
       />
     </Form>
   );

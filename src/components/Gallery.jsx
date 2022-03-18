@@ -21,6 +21,7 @@ export default class Gallery extends Component {
             className="justify-content-center my-2"
           />
 
+          {/* If user types movie name which length is more than 2, it will show Movie  */}
           {this.state.searchQuery.length > 2 ? (
             <MovieRow movie={this.state.searchQuery} />
           ) : (
