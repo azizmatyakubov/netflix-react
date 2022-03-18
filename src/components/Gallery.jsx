@@ -12,6 +12,7 @@ export default class Gallery extends Component {
   render() {
     return (
       <>
+
         <Container fluid className="px-5 pt-4">
           <SearchBar
             searchQuery={this.state.searchQuery}
@@ -31,6 +32,7 @@ export default class Gallery extends Component {
           <MovieRow movie="Sherlock" />
           <MovieRow movie="Stranger%20Things" />
           <MovieRow movie="Joker" />
+
         </Container>
       </>
     );

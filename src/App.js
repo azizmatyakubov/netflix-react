@@ -12,6 +12,7 @@ function App() {
         bgColor={"black"}
         textColor={"white"}
         fontSize={"20px"}
+        logoSmartphoneWidth={"180px"}
       />
       <Gallery />
     </>
