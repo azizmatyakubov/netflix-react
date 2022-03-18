@@ -1,9 +1,14 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import MyFooter from "./components/MyFooter";
+import MyHeader from "./components/MyHeader";
 
 function App() {
   return (
-    <h1>Hello</h1>
+    <>
+      <MyHeader />
+      <MyFooter />
+    </>
   );
 }
 
