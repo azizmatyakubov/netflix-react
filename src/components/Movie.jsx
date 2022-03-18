@@ -1,10 +1,10 @@
 import React from "react";
-import { Col, Card } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import "./movie.css";
 
 const movie = (props) => {
   return (
-    <Col xs={4} md={3} lg={2}>
+    <Col xs={6} md={3} lg={2}>
       <img src={props.movie.Poster} alt="movie" class="img-fluid image mb-2" />
     </Col>
   );
