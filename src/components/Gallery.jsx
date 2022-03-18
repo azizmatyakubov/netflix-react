@@ -8,9 +8,9 @@ export default class Gallery extends Component {
     return (
       <>
         <Container fluid className="px-5">
-          <MovieRow movie="harry%20potter" />
+          <MovieRow movie="Harry Potter" />
           <MovieRow movie="Sherlock" />
-          <MovieRow movie="Stranger%20Things" />
+          <MovieRow movie="Stranger Things" />
         </Container>
       </>
     );
