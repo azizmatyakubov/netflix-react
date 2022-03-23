@@ -9,6 +9,7 @@ import NotFound from "./components/NotFound";
 import Gallery from "./components/Gallery";
 import MyNavbar from "./components/Navbar";
 import TvShows from './components/TvShows';
+import MovieDetails from './components/MovieDetails';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
       <Routes>
         <Route path='/'  element={<Gallery />}/>
         <Route path='/tv-shows'  element={<TvShows />}/>
+        <Route path='/movie-details/:id'  element={<MovieDetails />}/>
         <Route path='*'  element={<NotFound />}/>
       </Routes>
       <MyFooter />

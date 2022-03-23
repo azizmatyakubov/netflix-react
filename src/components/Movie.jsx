@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Col } from "react-bootstrap";
 import CommentArea from "./CommentArea";
 import "./movie.css";
@@ -20,6 +21,9 @@ class movie extends React.Component {
           }}
         />
         {this.state.selected && <CommentArea id={this.props.movie.imdbID} />}
+        <Link to={`/movie-details/` + this.props.movie.imdbID}>
+          <button>SEE DETAILS</button>
+        </Link>
       </Col>
     );
   }
