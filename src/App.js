@@ -11,7 +11,6 @@ import MyNavbar from "./components/Navbar";
 import TvShows from './components/TvShows';
 
 
-
 function App() {
   return (
     <>

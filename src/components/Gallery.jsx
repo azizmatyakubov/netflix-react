@@ -29,7 +29,7 @@ export default class Gallery extends Component {
           ) : (
             ""
           )}
-          <MovieRow movie="harry%20potter" />
+          <MovieRow movie="Harry Potter" />
           <MovieRow movie="Sherlock" />
           <MovieRow movie="Stranger%20Things" />
           <MovieRow movie="Joker" />
