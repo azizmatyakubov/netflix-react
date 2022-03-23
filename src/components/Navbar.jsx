@@ -1,6 +1,7 @@
 import { Navbar, Nav, Image, NavDropdown } from "react-bootstrap";
 import SearchBar from "./SearchBar";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const MyNavbar = (props) => {
   const [inputIsShown, setInputIsShown] = useState(false);
@@ -35,12 +36,14 @@ const MyNavbar = (props) => {
           >
             Home
           </Nav.Link>
-          <Nav.Link
-            style={{ color: props.textColor, fontSize: props.fontSize }}
-            href="#"
-          >
-            Tv Show
-          </Nav.Link>
+          <Link to={"/tv-shows"}>
+            <div
+              style={{ color: props.textColor, fontSize: props.fontSize }}
+              href="#"
+            >
+              Tv Show
+            </div>
+          </Link>
           <Nav.Link
             style={{ color: props.textColor, fontSize: props.fontSize }}
             href="#"

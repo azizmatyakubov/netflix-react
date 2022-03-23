@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import MovieRow from "./MovieRow";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SearchBar from "./SearchBar";
+import MyHeader from "./MyHeader";
 
 export default class Gallery extends Component {
   state = {
@@ -12,8 +13,8 @@ export default class Gallery extends Component {
   render() {
     return (
       <>
-
         <Container fluid className="px-5 pt-4">
+          <MyHeader />
           <SearchBar
             searchQuery={this.state.searchQuery}
             state={(dataFromSearchBar) => {
@@ -32,7 +33,6 @@ export default class Gallery extends Component {
           <MovieRow movie="Sherlock" />
           <MovieRow movie="Stranger%20Things" />
           <MovieRow movie="Joker" />
-
         </Container>
       </>
     );

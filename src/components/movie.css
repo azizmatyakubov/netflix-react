@@ -1,3 +1,12 @@
+.image {
+    position: relative;
+}
+
 .image:hover {
     opacity: 50%;
+}
+
+.comment {
+    height: 50px;
+    bottom: -40px;
 }

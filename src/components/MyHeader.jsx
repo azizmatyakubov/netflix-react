@@ -4,14 +4,18 @@ const MyHeader = () => {
   return (
     <Navbar>
       <div className="p-2 header mb-4 w-100">
-        <Navbar.Brand href="#home" className="title-prime">
+        <Navbar.Brand href="#home" className="title-prime text-white">
           TV Shows
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <NavDropdown title="Genre" id="basic-nav-dropdown">
+            <NavDropdown
+              title="Genre"
+              id="basic-nav-dropdown"
+              className="bg-light"
+            >
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Comedy</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Horror</NavDropdown.Item>

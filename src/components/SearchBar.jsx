@@ -1,6 +1,7 @@
 import { Form, FormControl } from "react-bootstrap";
 
 const SearchBar = (props) => {
+  // STATE
   return (
     <Form inline className="justify-content-center">
       <FormControl
@@ -10,9 +11,10 @@ const SearchBar = (props) => {
         className="mr-sm-2"
         value={props.searchQuery}
         onChange={(e) => {
-          props.state(e.target.value);
+          if (e.key === "Enter") {
+            props.state(e.target.value);
+          }
         }}
-
       />
     </Form>
   );
