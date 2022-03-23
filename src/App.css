@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -84,7 +83,6 @@
 
 #footer {
   /* position: absolute; */
-  bottom: 0;
   width: 100%;
   height: 270px;
   background: rgba(20, 20, 20, 255);
@@ -108,7 +106,6 @@
   border-color: white;
 }
 
-
 body {
   background: rgba(20, 20, 20, 255);
 }
@@ -116,5 +113,3 @@ body {
 #searchIcon:hover {
   display: contents;
 }
-
-

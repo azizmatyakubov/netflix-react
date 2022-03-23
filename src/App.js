@@ -7,11 +7,9 @@ import MyHeader from "./components/MyHeader";
 import Gallery from "./components/Gallery";
 import MyNavbar from "./components/Navbar";
 
-
 function App() {
   return (
     <>
-
       <MyNavbar
         logoWidth={"100%"}
         iconWidth={"40px"}
@@ -20,9 +18,9 @@ function App() {
         fontSize={"20px"}
         logoSmartphoneWidth={"180px"}
       />
-          <MyHeader />
+      <MyHeader />
       <Gallery />
-<MyFooter />
+      <MyFooter />
     </>
   );
 }
